@@ -1,0 +1,141 @@
+section {
+    color: #EFEFEF;
+    padding: 3%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card, .discount{
+    background-color: #ffffff;
+    width: 269px;
+    max-width: 269px;
+    padding: 16px;
+    color: #000;
+    box-shadow: 0 0 10px #535353;
+    border-radius: 10px;
+    font-size: 16px;
+    
+   
+}
+.nonbtn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card span.free, .card span.available {
+    width: fit-content;
+    background-color: #0D72EA;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 5px 0;
+    
+}
+.card span.available{
+    background-color: transparent;
+    color: #0D72EA;
+    border: 2px solid #0D72EA;
+    
+}
+
+.card h3.planName{
+    font-size: 23px;
+    font-weight: bold;
+    
+}
+.account{
+    font-size: 15px;
+}
+.header {
+    border-bottom: 2px solid #ccc;
+    margin: 0 20px;
+}
+.content {
+    border-bottom: 2px solid #ccc;
+    padding: 16px 6px;
+    padding-bottom: 0;
+    box-shadow: -8px 10px 12px #ddd;
+}
+.content ul {
+    list-style-image:url("../../assets/icons/checkmark.svg");
+}
+.content ul li{
+    padding: 5px 10px;
+    position: relative;
+}
+.content ul li p{
+    position: absolute;
+    margin-top: -9px;
+}
+.content .button {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+li p {
+    line-height: 22px;
+}
+div.footer {
+    font-size: 12px;
+    line-height: 16px;
+    color: #535353;
+    padding: 16px;
+    
+}
+div.footer a {
+    font-size: 12px;
+    line-height: 16px;
+    color: #535353;
+}
+
+.flex {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title, .description {
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+.title{
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: bold;
+    /* padding-top: 48.2px; */
+    margin-top: 48.2px;
+}
+.description {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.discount {
+    max-width: none;
+    width: fit-content;
+    display: flex;
+    padding: 4px 10px;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .discount{
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding-bottom: 20px;
+
+    }
+}
